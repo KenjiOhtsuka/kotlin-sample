@@ -16,7 +16,6 @@ inline fun g(noinline body: () -> Unit) {
     h.run()
 }
 
-
 fun main(args: Array<String>) {
     val body = {
         println("body")
