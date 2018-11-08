@@ -5,6 +5,24 @@ import java.awt.event.MouseEvent
 import java.awt.event.MouseListener
 
 
+class CompanionObjectSample {
+    object A {
+        fun a() {
+            println("a")
+        }
+    }
+
+    companion object B {
+        fun b() {
+            println("b")
+        }
+    }
+
+    init {
+        A.a()
+    }
+}
+
 fun main() {
     // Object Expression Example
     Frame().run {
@@ -20,4 +38,10 @@ fun main() {
         })
         isVisible = true
     }
+
+    // Companion Object Example
+    CompanionObjectSample.A.a()
+    // CompanionObjectSample.a() => Error
+    CompanionObjectSample.b()
+    CompanionObjectSample.B.b()
 }
