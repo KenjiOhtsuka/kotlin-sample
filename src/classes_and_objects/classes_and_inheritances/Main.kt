@@ -24,3 +24,21 @@ class Derived2: AbstractClass() {
         println("abstract")
     }
 }
+
+class Food {
+    var starch = 0.0
+    var protain = 0.0
+    var fat = 0.0
+    val energy: Double
+    get() = starch * 4 + protain * 4 + fat * 9
+}
+
+fun main() {
+    Food().also {
+        it.starch = 1.0
+        println(it.energy)
+        it.protain = 1.0
+        it.fat = 1.0
+        println(it.energy)
+    }
+}
