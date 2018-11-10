@@ -1,0 +1,24 @@
+package classes_and_objects.interfaces
+
+interface SampleInterface {
+    val int1: Int
+
+    val int2: Int
+        get() {
+            return 2
+        }
+
+    fun method()
+
+    fun methodWithBody() {
+        println("interface method")
+    }
+}
+
+class ConcreteClass : SampleInterface {
+    override val int1: Int = 2
+
+    override fun method() {
+        println("override")
+    }
+}
