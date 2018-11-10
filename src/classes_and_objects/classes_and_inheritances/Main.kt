@@ -26,6 +26,10 @@ class Derived2: AbstractClass() {
 }
 
 class Food {
+    var name = ""
+    set(value) {
+        field = value.trim()
+    }
     var starch = 0.0
     var protain = 0.0
     var fat = 0.0
