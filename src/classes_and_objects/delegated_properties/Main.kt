@@ -19,5 +19,4 @@ fun main(args: Array<String>) {
     val user = User()
     user.name = "first"
     user.name = "second"
-
 }
