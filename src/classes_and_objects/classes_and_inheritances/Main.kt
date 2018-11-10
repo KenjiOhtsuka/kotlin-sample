@@ -45,4 +45,42 @@ fun main() {
         it.fat = 1.0
         println(it.energy)
     }
+
+    WithoutPrimaryConstructor()
+    WithPrimaryConstructor(1)
+    WithAnotherSecondaryConstructor(1)
+}
+
+open class WithoutPrimaryConstructor {
+    init {
+        println("initialize")
+    }
+
+    constructor() {
+        println("Secondary")
+    }
+}
+
+open class WithPrimaryConstructor(val name: String) {
+    init {
+        println("initialize")
+    }
+
+    constructor(number: Int) : this(number.toString()) {
+        println("Secondary")
+    }
+}
+
+open class WithAnotherSecondaryConstructor(val name: String) {
+    init {
+        println("initialize")
+    }
+
+    constructor(number: Int): this(number.toDouble()) {
+        println("secondary (Int)")
+    }
+
+    constructor(number: Double): this(number.toString()) {
+        println("secondary (Double)")
+    }
 }
