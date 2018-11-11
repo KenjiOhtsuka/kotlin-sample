@@ -8,6 +8,6 @@ public class JavaClass {
 
     void test2() {
         NameSpecified.getA1();
-        NameSpecified.function1()
+        NameSpecified.function1();
     }
 }

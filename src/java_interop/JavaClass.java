@@ -1,7 +1,12 @@
 package java_interop;
 
 class JavaClass {
-    Integer test() {
+    public Integer test() {
         return null;
+    }
+
+    public Integer calc(Integer i) {
+        if (i == null) return null;
+        return i * 2;
     }
 }
