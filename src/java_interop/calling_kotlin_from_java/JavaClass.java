@@ -31,4 +31,9 @@ public class JavaClass {
         t.f(1, 2, 3);
         t.g(1, 2);
     }
+
+    void test6() {
+        KotlinObject.INSTANCE.notStaticFunction();
+        KotlinObject.staticFunction();
+    }
 }
