@@ -33,7 +33,18 @@ public class JavaClass {
     }
 
     void test6() {
+        KotlinObject.INSTANCE.getNotStaticValue();
+        KotlinObject.getStaticValue();
         KotlinObject.INSTANCE.notStaticFunction();
+
+        // Error:
+        // KotlinObject.INSTANCE.staticFunction();
         KotlinObject.staticFunction();
+
+        KotlinClass.Companion.getNotStaticValue();
+        KotlinClass.getStaticValue();
+        KotlinClass.staticFunction();
+        KotlinClass.Companion.staticFunction();
+        KotlinClass.Companion.notStaticFucntion();
     }
 }
