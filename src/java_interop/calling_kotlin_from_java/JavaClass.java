@@ -24,8 +24,8 @@ public class JavaClass {
     }
 
     void test5() {
-        Sample t = new Sample(1);
-        t = new Sample(1, 2);
+        OverloadSample t = new OverloadSample(1);
+        t = new OverloadSample(1, 2);
         t.f(1);
         t.f(1, 2);
         t.f(1, 2, 3);

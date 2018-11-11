@@ -1,6 +1,6 @@
 package java_interop.calling_kotlin_from_java
 
-class Sample @JvmOverloads constructor(val a: Int, val b: Int = a) {
+class OverloadSample @JvmOverloads constructor(val a: Int, val b: Int = a) {
     @JvmOverloads fun f(i: Int, j: Int = 1, k: Int = 2): Int {
         return i * j * k
     }
