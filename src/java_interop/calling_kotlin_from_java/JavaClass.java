@@ -17,4 +17,18 @@ public class JavaClass {
         MultiFileClass.function1();
         MultiFileClass.function2();
     }
+
+    void test4() {
+        ExtensionFunction.surround("test");
+        ExtensionFunction.surround("test", "<", ">");
+    }
+
+    void test5() {
+        Sample t = new Sample(1);
+        t = new Sample(1, 2);
+        t.f(1);
+        t.f(1, 2);
+        t.f(1, 2, 3);
+        t.g(1, 2);
+    }
 }
