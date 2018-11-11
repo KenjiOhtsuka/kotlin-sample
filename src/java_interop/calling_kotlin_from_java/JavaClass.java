@@ -47,4 +47,10 @@ public class JavaClass {
         KotlinClass.Companion.staticFunction();
         KotlinClass.Companion.notStaticFucntion();
     }
+
+    void test7() {
+        var kotlinClass = new KotlinClass();
+        var f = kotlinClass.field;
+        var p = kotlinClass.getProperty();
+    }
 }
