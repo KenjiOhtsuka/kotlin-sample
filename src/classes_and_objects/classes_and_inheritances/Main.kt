@@ -51,6 +51,8 @@ fun main() {
     WithAnotherSecondaryConstructor(1)
 }
 
+/* Constructor Inheritation Example */
+
 open class WithoutPrimaryConstructor {
     init {
         println("initialize")
@@ -83,4 +85,9 @@ open class WithAnotherSecondaryConstructor(val name: String) {
     constructor(number: Double): this(number.toString()) {
         println("secondary (Double)")
     }
+}
+
+/* Constructor Example */
+class Secret internal constructor(val name: String) {
+
 }
