@@ -7,7 +7,14 @@ public class JavaClass {
     }
 
     void test2() {
-        NameSpecified.getA1();
-        NameSpecified.function1();
+        NameSpecified.getNamedA();
+        NameSpecified.namedFunction();
+    }
+
+    void test3() {
+        MultiFileClass.getValue1();
+        MultiFileClass.getValue2();
+        MultiFileClass.function1();
+        MultiFileClass.function2();
     }
 }

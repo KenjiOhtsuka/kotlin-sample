@@ -2,8 +2,8 @@
 
 package java_interop.calling_kotlin_from_java
 
-val a1: Int = 1
+val namedA: Int = 1
 
-fun function1(): Int {
+fun namedFunction(): Int {
     return 1
 }
