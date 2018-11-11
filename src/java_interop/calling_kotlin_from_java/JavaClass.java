@@ -52,5 +52,9 @@ public class JavaClass {
         var kotlinClass = new KotlinClass();
         var f = kotlinClass.field;
         var p = kotlinClass.getProperty();
+        // Error:
+        // kotlinClass.getLateiniteVar();
+        kotlinClass.lateiniteVar = "a";
+        kotlinClass.setLateiniteVar("a");
     }
 }
